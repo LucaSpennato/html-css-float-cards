@@ -7,6 +7,7 @@
 header, section{
     width: 60%;
     margin: auto;
+    font-family: 'Quicksand', sans-serif;
 }
 
 
@@ -20,6 +21,12 @@ header, main section{
     display: table;
     clear: both;
 }
+
+header h1{
+    color: deeppink;
+}
+
+/* gestione del main  */
 
 .cards{
     width: calc(100% / 3 - 30px);
@@ -36,23 +43,22 @@ header, main section{
     float: left;
 }
 
-.team-info h3, .team-info p, .team-info a{
+.team-info ul li h5, .team-info ul li p, .team-info ul li a{
     text-decoration: none;
-    padding: 5px 0 0 10px;
-    display: inline-block;
+    margin: 8px 0 0 10px;
 }
 
-/* .top .team-info{
-    height: 70px;
-    overflow: auto;
-} */
+.team-info ul li h5{
+ font-weight: bold;
+}
 
-/* test with ul  */
+.team-info ul li p, .team-info ul li a {
+    font-size: 12px;
+}
 
 ul{
     list-style-type: none;
     height: 70px;
-    margin-top: 5px;
     overflow: auto;
 }
 
@@ -66,12 +72,3 @@ ul::-webkit-scrollbar {
 ul::-webkit-scrollbar-thumb{
     background-color:deeppink;
 }
-
-/* .team-info::-webkit-scrollbar {
-    width: 2px;
-    background: white;
-}
-
-.team-info::-webkit-scrollbar-thumb{
-    background-color:deeppink;
-} */
