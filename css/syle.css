@@ -22,12 +22,13 @@ header, main section{
 }
 
 .cards{
-    width: calc(100% / 3 - 20px);
+    width: calc(100% / 3 - 30px);
     background-color: black;
     color: white;
     text-align: left;
     float: left;
-    box-shadow: 0px 0px 5px 5px lightgray;
+    box-shadow: 0px 0px 10px 3px gray;
+    margin: 0 15px;
 }
 
 .cards img{
@@ -37,8 +38,40 @@ header, main section{
 
 .team-info h3, .team-info p, .team-info a{
     text-decoration: none;
-    margin: 8px 0 0 10px;
+    padding: 5px 0 0 10px;
     display: inline-block;
 }
 
+/* .top .team-info{
+    height: 70px;
+    overflow: auto;
+} */
 
+/* test with ul  */
+
+ul{
+    list-style-type: none;
+    height: 70px;
+    margin-top: 5px;
+    overflow: auto;
+}
+
+/* style scrollbar  */
+
+ul::-webkit-scrollbar {
+    width: 2px;
+    background: white;
+}
+
+ul::-webkit-scrollbar-thumb{
+    background-color:deeppink;
+}
+
+/* .team-info::-webkit-scrollbar {
+    width: 2px;
+    background: white;
+}
+
+.team-info::-webkit-scrollbar-thumb{
+    background-color:deeppink;
+} */
